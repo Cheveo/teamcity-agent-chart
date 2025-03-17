@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  teamcity-agent-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-17T16:52:03.469215+01:00"
+    description: A Helm chart for deploying TeamCity Agent
+    digest: 72755236a2a6058fa7be40e88404c141b54c28382789c41f019db27b08ef28b0
+    name: teamcity-agent-chart
+    type: application
+    urls:
+    - teamcity-agent-chart-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-03-17T16:52:03.467499+01:00"

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "teamcity-agent.fullname" . }}
+  labels:
+    app: {{ include "teamcity-agent.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "teamcity-agent.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "teamcity-agent.name" . }}
+    spec:
+      containers:
+        - name: teamcity-agent
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: SERVER_URL
+             - value: {{ .Values.serverUrl }}
+            - name: AGENT_TOKEN
+            - value: {{ .Values.agentToken }}
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      restartPolicy: Always
