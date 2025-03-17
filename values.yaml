@@ -10,6 +10,7 @@ image:
 
 serverUrl: "XXXXXXXXXXXXXXX"
 agentToken: "XXXXXXXXXXXXXXX"
+
 resources:
   limits:
     cpu: "500m"
