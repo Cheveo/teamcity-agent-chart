@@ -8,6 +8,10 @@ image:
 # must create a sealed secret named "teamcity-agent-secret" with the following keys:
 # - token
 
+serverUrl: "XXXXXXXXXXXXXXX"
+agentToken: "XXXXXXXXXXXXXXX"
+agentName: "NAME-OF-AGENT"
+
 resources:
   limits:
     cpu: "500m"

@@ -20,9 +20,11 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: SERVER_URL
-             - value: {{ .Values.serverUrl }}
+              value: {{ .Values.serverUrl }}
+            - name: AGENT_NAME
+              value: {{ .Values.agentName }}
             - name: AGENT_TOKEN
-            - value: {{ .Values.agentToken }}
+              value: {{ .Values.agentToken }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       restartPolicy: Always

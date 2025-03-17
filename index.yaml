@@ -3,9 +3,32 @@ entries:
   teamcity-agent-chart:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-03-18T10:28:18.516433+01:00"
     description: A Helm chart for deploying TeamCity Agent
+    digest: fad4fcf2a57ab3d6dd3c9f34a259db04e1268b64cd337b1cbc7034713fa175e3
+    name: teamcity-agent-chart
+    type: application
+    urls:
+    - teamcity-agent-chart-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-18T10:28:18.515923+01:00"
+    description: A Helm chart for deploying TeamCity Agent
+    digest: ee46bed087afa1dc5a7338603cf9119b1e3caa221c93a0d6c787a4fbb566c5ac
+    name: teamcity-agent-chart
+    type: application
+    urls:
+    - teamcity-agent-chart-1.0.1.tgz
+    version: 1.0.1
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-18T10:28:18.515522+01:00"
+    description: A Helm chart for deploying TeamCity Agent
+    digest: 1c0354b410b37a8a12076f21e30492d9dc4b4e4061b2de37dfa08eb94ae2afab
     name: teamcity-agent-chart
     type: application
     urls:
     - teamcity-agent-chart-1.0.0.tgz
     version: 1.0.0
+generated: "2025-03-18T10:28:18.510457+01:00"
