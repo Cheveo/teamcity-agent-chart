@@ -5,10 +5,8 @@ image:
   tag: "latest"
   pullPolicy: IfNotPresent
 
-# if you want to use a secret to store your TeamCity server URL and agent token, provide the secret name here
-# create a secret with the stringData containing your TeamCity server URL and agent token
-serverUrlSecretName: "teamcity-server-url-secret"
-agentTokenSecretName: "teamcity-agent-token-secret"
+# must create a sealed secret named "teamcity-agent-secret" with the following keys:
+# - token
 
 resources:
   limits:
