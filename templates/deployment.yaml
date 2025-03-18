@@ -24,7 +24,10 @@ spec:
             - name: AGENT_NAME
               value: {{ .Values.agentName }}
             - name: AGENT_TOKEN
-              value: {{ .Values.agentToken }}
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.tokenSecretName }}
+                  key: token
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       restartPolicy: Always
